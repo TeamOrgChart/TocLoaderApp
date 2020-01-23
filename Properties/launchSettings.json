@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TocLoaderApp": {
+      "commandName": "Project",
+      "commandLineArgs": "-i \"demo.csv\""
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.7.82" />
+    <PackageReference Include="CsvHelper" Version="13.0.0" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TocApiLibrary">
+      <HintPath>..\..\tocapilib\TocApiLibrary\bin\Debug\TocApiLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
