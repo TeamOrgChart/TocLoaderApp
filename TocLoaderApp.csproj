@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Reference Include="TocApiLibrary">
-      <HintPath>..\..\tocapilib\TocApiLibrary\bin\Debug\TocApiLibrary.dll</HintPath>
+      <HintPath>..\TocApiLibrary\bin\Debug\TocApiLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -44,8 +44,9 @@ namespace TocLoaderApp
 
                 }
             }
-            var client = new TeamOrgChartWebUIDirectoryApp(new ApiKeyHandler("4BDa0n.n4nAYJfsxdJT32pj"));
-            var uploaded = client.ChartDataApi.CreateChartItems("891d471e-6d77-41f0-97b0-74868f7e0982", rows.ToList(), "1");
+            var client = new TeamOrgChartApi(new ApiKeyHandler("hvfqgL.0pf7TJbKu2ugoZQV"));
+            var chart = client.ChartsApi.CreateChart(new Teamorgchart.Models.CreateChartModel { IsPublic = false, Name = $"API Loader ${DateTime.Now.ToShortTimeString()}" }, "1");
+            var uploaded = client.ChartDataApi.CreateChartItems(chart.OrgChartDefinitionId, rows.ToList(), "1");
             Console.WriteLine($"Total number of items created: {uploaded.Count}");
         }
 
